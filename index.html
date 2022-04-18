@@ -29,12 +29,12 @@
         var os = getMobileOperatingSystem()
 
         if (os == "iOS") {
-            window.location.replace("lenmo://bankflow/success?" + data);
+            window.location.replace("lenmo://bankflow/error?" + data);
             return
         }
 
         if (os == "Android") {
-            window.location.replace("https://links.lenme.com/bankflow/success?" + data);
+            window.location.replace("https://links.lenme.com/bankflow/error?" + data);
             return
         }
     }(window));
