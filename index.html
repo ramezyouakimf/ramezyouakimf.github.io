@@ -34,11 +34,11 @@
         }
 
         if (os == "Android") {
-            window.location.replace("intent://links.lenme.com/;scheme=https;end");
+            window.location.replace("intent://links.lenme.com?"+ data +";scheme=https;end");
             return
         }
 
     }(window));
 </script>
-<a href="intent://links.lenme.com/;scheme=https;end"> Take a QR code </a>
+
 </html>
