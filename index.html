@@ -33,14 +33,15 @@
             return
         }
 
-//         if (os == "Android") {
+        if (os == "Android") {
 //             window.location.replace("intent://links.lenme.com/;scheme=https;end");
-//             return
-//         }
+            document.getElementById("deeplink").href = "lenmo://app/bankflow/success?" + data;
+            return
+        }
 
     }(window));
 </script>
 <!--     <a href="intent://links.lenme.com/;scheme=https;end">click here</a> -->
-    <a href="lenmo://app/bankflow/success?" + data>click here</a>
+    <a id="deeplink" href="lenmo://app/bankflow/success">click here</a>
     
 </html>
